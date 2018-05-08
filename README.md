@@ -12,7 +12,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-Open a terminal and follow the [instrucctions](https://github.com/cubiche/sandbox-ap/blob/master/README.md) to have the API project running.
+Open a terminal and follow the [instrucctions](https://github.com/cubiche/sandbox-api/blob/master/README.md) to have the API project running.
 Open another terminal and clone the repository.
 
 ```bash
