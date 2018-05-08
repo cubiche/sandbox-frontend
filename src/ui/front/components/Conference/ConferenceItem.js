@@ -20,6 +20,9 @@ const styles = `
     .tickets {
         margin: 0;
         line-height: 40px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     .event-date {
         text-align: center;

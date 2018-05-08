@@ -27,7 +27,7 @@ class ConferenceList extends React.Component {
                 <h2><FormattedMessage id='title.events' defaultMessage='Upcoming Events' /></h2>
                 <List
                     id="Conferences"
-                    grid={{ gutter: 16, xs: 1, sm: 2, md: 4, lg: 4, xl: 6, xxl: 3 }}
+                    grid={{ gutter: 16, column: 3 }}
                     dataSource={conferences}
                     loading={isLoading}
                     locale={{ emptyText: '' }}
