@@ -47,7 +47,7 @@ npm run coverage
 
 ## Built With
 
-* [NextJS](http://symfony.com/) - A server-rendered framework for React apps
+* [NextJS](https://nextjs.org/) - A server-rendered framework for React apps
 * [React](https://reactjs.org/) + [Redux](https://redux.js.org/) + [Redux Saga](https://redux-saga.js.org/)
 
 ## License
