@@ -2,7 +2,7 @@ import React from "react";
 import { Layout } from 'antd';
 import LocaleSwitcher from '../Locale/LocaleSwitcher'
 import UserMenu from '../User/UserMenu'
-import logo from '../../../../../static/logo.png'
+import Link from '../Link'
 
 const { Header } = Layout;
 const styles = `   
@@ -36,6 +36,7 @@ const styles = `
         float: left;
     }    
     .logo {
+        cursor: pointer;
         left: 10px;
         top: 10px;
         background: #e40079;
@@ -51,6 +52,7 @@ const styles = `
         transform: rotate(45deg);
     }    
     .brand-name {
+        cursor: pointer;
         font-weight: bold;
         color: #fff;
         font-size: 22px;
@@ -87,10 +89,12 @@ export default class AppHeader extends React.Component {
                     `}
                 </style>
                 <div className="wrapper">
-                    <div className="logo-container">
-                        <div className="logo"></div>
-                        <div className="brand-name">Eventify</div>
-                    </div>
+                    <Link route='home'>
+                        <div className="logo-container">
+                            <div className="logo"></div>
+                            <div className="brand-name">Eventify</div>
+                        </div>
+                    </Link>
                     {showUserItem && <div className="user-menu"><UserMenu/></div>}
                     <div className="locale-switcher"><LocaleSwitcher /></div>
                 </div>

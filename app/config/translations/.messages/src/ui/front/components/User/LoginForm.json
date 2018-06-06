@@ -1,0 +1,26 @@
+[
+  {
+    "id": "title.login",
+    "defaultMessage": "Welcome back"
+  },
+  {
+    "id": "text.login",
+    "defaultMessage": "To log in, enter your email address below:"
+  },
+  {
+    "id": "label.remember_me",
+    "defaultMessage": "Remember me"
+  },
+  {
+    "id": "label.forgot_password",
+    "defaultMessage": "Forgot password"
+  },
+  {
+    "id": "button.log_in",
+    "defaultMessage": "Login"
+  },
+  {
+    "id": "button.register_now",
+    "defaultMessage": "Register now!"
+  }
+]

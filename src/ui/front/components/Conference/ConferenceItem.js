@@ -3,6 +3,7 @@ import {connect} from "react-redux";
 import { FormattedMessage } from 'react-intl'
 import { Button, Card, notification, Icon } from 'antd';
 import moment from "moment";
+import Link from '../Link'
 const { Meta } = Card;
 import App from "../../../../application";
 
@@ -51,14 +52,6 @@ const styles = `
     }
 `
 
-const openNotification = () => {
-    notification.open({
-        message: 'Be patient',
-        description: 'The "buy ticket feature" is coming!',
-        icon: <Icon type="smile-circle" style={{ color: '#e40079' }} />,
-    });
-};
-
 class ConferenceItem extends React.Component {
     render() {
         const { conference, currentUser } = this.props;
@@ -70,9 +63,11 @@ class ConferenceItem extends React.Component {
                 actions={[
                     <p className="tickets">{conference.availableTickets} tickets remaining</p>,
                     currentUser.username ? (
-                        <Button type="primary" size="large" className="buy-ticket-button" onClick={openNotification}>
-                            <FormattedMessage id='button.get_ticket' defaultMessage='Get a ticket' />
-                        </Button>
+                        <Link route='buy_ticket' params={{id: conference.id}}>
+                            <Button type="primary" size="large" className="buy-ticket-button">
+                                <FormattedMessage id='button.get_ticket' defaultMessage='Get a ticket' />
+                            </Button>
+                        </Link>
                     ) : (
                         <Button type="primary" size="large" className="buy-ticket-button" ghost disabled>
                             <FormattedMessage id='button.get_ticket' defaultMessage='Get a ticket' />

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "nav.home",
+    "defaultMessage": "Website"
+  },
+  {
+    "id": "nav.user.settings",
+    "defaultMessage": "Settings"
+  },
+  {
+    "id": "nav.user.logout",
+    "defaultMessage": "Logout"
+  }
+]

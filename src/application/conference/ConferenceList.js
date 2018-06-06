@@ -6,7 +6,8 @@ const ConferenceList = createRemoteObject({
     namespace: 'conference', store: 'list'
 }).extend({
     selectors: (module) => ({
-        all: (state) => module.selectors.data(state)
+        all: (state) => module.selectors.data(state),
+        getById: (state, id) => module.select(state, (localState) => localState.data.find(conference => conference.id === id))
     }),
     sagas: () => ({
         doFetch: function *doFetch() {

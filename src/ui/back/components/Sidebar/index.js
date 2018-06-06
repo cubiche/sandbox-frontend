@@ -14,6 +14,7 @@ const styles = `
     }
     
     .logo {
+        cursor: pointer;
         left: 24px;
         top: 10px;
         background: #e40079;
@@ -30,6 +31,7 @@ const styles = `
     }
     
     .brand-name {
+        cursor: pointer;
         font-weight: bold;
         color: #fff;
         font-size: 20px;
@@ -116,10 +118,12 @@ class Sidebar extends React.Component {
                         }
                     `}
                 </style>
-                <div className="logo-container">
-                    <div className="logo"></div>
-                    <div className="brand-name">Eventify</div>
-                </div>
+                <Link route='dashboard'>
+                    <div className="logo-container">
+                        <div className="logo"></div>
+                        <div className="brand-name">Eventify</div>
+                    </div>
+                </Link>
 
                 { this.isAdmin(currentUser) ? (
                     <Menu defaultSelectedKeys={['1']} mode="inline" theme="dark">
@@ -137,14 +141,14 @@ class Sidebar extends React.Component {
                       </Menu.Item>
                       <Menu.Item key="4">
                           <Icon type="shopping-cart" />
-                          <Link route='my_order_list'><span><FormattedMessage id='nav.my_orders' defaultMessage='My Orders' /></span></Link>
+                          <Link route='my_order_list'><span><FormattedMessage id='nav.my_orders' defaultMessage='My orders' /></span></Link>
                       </Menu.Item>
                     </Menu>
                 ) : (
                     <Menu defaultSelectedKeys={['1']} mode="inline" theme="dark">
                         <Menu.Item key="1">
                             <Icon type="shopping-cart" />
-                            <Link route='my_order_list'><span><FormattedMessage id='nav.my_orders' defaultMessage='My Orders' /></span></Link>
+                            <Link route='my_order_list'><span><FormattedMessage id='nav.my_orders' defaultMessage='My orders' /></span></Link>
                         </Menu.Item>
                     </Menu>
                 )}

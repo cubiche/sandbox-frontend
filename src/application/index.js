@@ -1,5 +1,6 @@
 import Module from './core/Module'
 import Conference from './conference'
+import Reservation from './reservation'
 import Locale from './system/locale'
 import Security from './security'
 import {all, fork, put, take} from "redux-saga/effects";
@@ -20,6 +21,7 @@ const App = new Module({
 }).extend({
     modules: [
         Conference,
+        Reservation,
         Locale,
         Security
     ],

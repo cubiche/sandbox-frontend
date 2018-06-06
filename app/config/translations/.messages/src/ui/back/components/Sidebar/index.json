@@ -1,0 +1,18 @@
+[
+  {
+    "id": "nav.conferences",
+    "defaultMessage": "Conferences"
+  },
+  {
+    "id": "nav.users",
+    "defaultMessage": "Users"
+  },
+  {
+    "id": "nav.orders",
+    "defaultMessage": "Orders"
+  },
+  {
+    "id": "nav.my_orders",
+    "defaultMessage": "My orders"
+  }
+]

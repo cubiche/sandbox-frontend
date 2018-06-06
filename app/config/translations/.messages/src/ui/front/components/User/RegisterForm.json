@@ -1,0 +1,18 @@
+[
+  {
+    "id": "title.register",
+    "defaultMessage": "Sign up"
+  },
+  {
+    "id": "text.register",
+    "defaultMessage": "It's free and takes less than 30 seconds"
+  },
+  {
+    "id": "button.log_in",
+    "defaultMessage": "Login"
+  },
+  {
+    "id": "button.sign_up",
+    "defaultMessage": "Register now!"
+  }
+]

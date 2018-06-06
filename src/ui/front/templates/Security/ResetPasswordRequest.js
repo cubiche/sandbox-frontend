@@ -37,7 +37,7 @@ export default class ResetPasswordRequestPage extends React.Component {
                 <style jsx="true">{styles}</style>
                 <FluidLayout>
                     <Row className="overlay-color">
-                        <Col span={8} offset={8}>
+                        <Col span={12} offset={6}>
                             <div className="reset-container">
                                 <ResetPasswordRequestForm />
                             </div>

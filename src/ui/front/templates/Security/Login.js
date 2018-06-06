@@ -37,7 +37,7 @@ export default class LoginPage extends React.Component {
                 <style jsx="true">{styles}</style>
                 <FluidLayout showUserItem={false}>
                     <Row className="overlay-color">
-                        <Col span={8} offset={8}>
+                        <Col span={12} offset={6}>
                             <div className="login-container">
                                 <LoginForm />
                             </div>

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "nav.my_orders",
+    "defaultMessage": "My orders"
+  },
+  {
+    "id": "nav.user.settings",
+    "defaultMessage": "Settings"
+  },
+  {
+    "id": "nav.user.logout",
+    "defaultMessage": "Logout"
+  },
+  {
+    "id": "button.log_in",
+    "defaultMessage": "Login"
+  }
+]

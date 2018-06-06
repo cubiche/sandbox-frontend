@@ -1,0 +1,14 @@
+[
+  {
+    "id": "title.congrats",
+    "defaultMessage": "Great!"
+  },
+  {
+    "id": "title.tickets",
+    "defaultMessage": "By a ticket"
+  },
+  {
+    "id": "button.order_now",
+    "defaultMessage": "Order Now"
+  }
+]
